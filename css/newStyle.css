@@ -1,0 +1,37 @@
+.widget-header {
+  border: 0;
+}
+
+.widget-controls {
+  border: 0!important;
+  background-color: #17053a;
+  color: white!important;
+}
+
+.widget-controls-top {
+  border: 0!important;
+}
+
+.widget-controls-mid {
+  border: 0!important;
+}
+
+.widget-title-container a {
+  color: white!important;
+}
+
+span.follow-button {
+  display: none;
+}
+
+.widget-scrubber-container span {
+  color: white;
+}
+
+.repost {
+  display: none;
+}
+
+.share {
+  display: none;
+}

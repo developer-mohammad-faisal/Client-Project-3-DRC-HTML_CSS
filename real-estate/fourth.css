@@ -1,0 +1,334 @@
+body{
+    /* background-color: rgb(177, 136, 215); */
+    background-color: #0b1026;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+.cardparent1{
+    height: 80vh;
+}
+
+
+
+
+
+.cardparent3{
+    margin-left: 0.5rem;
+    margin-top: 3rem;
+    height: 160vh;
+    display: flex;
+    gap: 5rem;
+    /* position: absolute; */
+    transition: all 0.2ms;
+
+    overflow: auto;
+}
+.cardchild{
+    /* background-color: white; */
+    position: relative;
+    height: 100%;
+    min-width: 40vw;
+    /* width: 60vw; */
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 999px)  {
+    .cardtext  h1{
+        font-size: 2rem !important;
+    }
+    
+
+
+}
+@media only screen and (max-width: 680px)  {
+    .cardtext  h1{
+        font-size: 1rem !important;
+    }
+    
+
+
+}
+@media only screen and (max-width: 540px)  {
+    .cardchild{
+        
+        min-width: 80vw;
+        
+        
+    }
+    
+
+
+}
+@media only screen and (max-width: 420px)  {
+    .cardchild{
+        
+        min-width: 90vw;
+        /* min-height:10rem ; */
+        height: 40rem;
+        
+        
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+.cardparent3::-webkit-scrollbar{
+    width:0px ;
+}
+
+.cardtext > p , h1{
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* hover start */
+
+.cardtext:hover .cardheading{
+    color: #CEB068 !important;
+    cursor: pointer;
+}
+
+.cardbtn:hover{
+    text-decoration: underline !important;
+
+}
+
+.cardchild{
+    overflow: hidden;
+}
+
+
+.imghover{
+    transition: transform 0.8s;
+
+}
+
+.imghover:hover{
+    transform: scale(1.1);
+    
+}
+
+.cardchild:hover h1{
+    color: #CEB068 !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+.cardimg1{
+    background-image: url(./assets/real-estate-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg2{
+    background-image: url(./assets/real-estate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg3{
+    background-image: url(./assets/real-estate-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg4{
+    background-image: url(./assets/real-estate-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg5{
+    background-image: url(./assets/real-estate-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg6{
+    background-image: url(./assets/real-estate-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+.cardimg7{
+    background-image: url(./assets/real-estate-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.5%;
+}
+
+
+.cardbtn a{
+    
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #CEB068;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+}
+
+
+/* ----arrows styling----------- */
+/* .firstArrowdiv{ */
+    /* position: absolute; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* top: 10%;    */
+    /* height: 100vh; */
+    /* bottom: -30%; */
+
+
+/* } */
+
+
+.cardleftarrow{
+   
+    display: flex;
+    /* top:120% ; */
+    position: absolute;
+    border: 2px solid #CEB068;
+    padding:1rem 1.5rem;
+    font-size: 2rem;
+    color: #CEB068;
+    margin-left: 0.8rem;    
+    cursor: pointer;
+    margin-top: -28rem;
+
+}
+
+
+.cardrightarrow{
+    /* top:112% ; */
+    display: flex;
+    border: 2px solid #CEB068;
+    position: absolute;    
+    padding:1rem 1.5rem;
+    font-size: 2rem;
+    color: #CEB068;
+    /* right: -10%;    */
+    margin-left:70rem ;
+    cursor: pointer;
+    margin-top: -28rem;
+
+    /* flex-direction: row-reverse; */
+}
+
+.cardleftarrow:hover , .cardrightarrow:hover{
+    color: white !important;
+    border: 2px solid white;
+}
+
+
+.secondArrowsdiv{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.left {  
+    border: 2px solid #CEB068;
+    padding:1rem 1.5rem;
+    font-size: 1.7rem;
+    color: #CEB068;
+    margin-left: 0.8rem;   
+    cursor: pointer;
+}
+    .right {  
+        border: 2px solid #CEB068;
+        padding:0.22rem 1.4rem;
+        font-size: 2rem;
+        color: #CEB068 !important;
+        margin-left: 0.8rem;   
+        cursor: pointer;
+    }
+
+
+.left:hover , .right:hover{
+    color: white !important;
+    border: 2px solid white;
+    /* padding: 1.1rem 1.6rem; */
+}
+
+
+.keepmebtn{
+    padding: 1rem 2.4rem 1rem 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:2px solid #CEB068;
+    text-decoration: none;
+    color: #CEB068;
+    font-size: 1.3rem;
+    /* letter-spacing: 0.2rem;     */
+    text-align: center;
+}
+.keepmebtn:hover{
+    color: white;
+    border:2px solid white;
+}
+
+.video-container{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 10px;
+    width:100%;
+    object-fit: cover;
+  }
+
+.mainvisitbtn{
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    background-color: #0e0e0f73;
+}
+.mainvisitbtn:hover{
+    color: white;
+    background-color: #0a0a0adb;
+
+}
+
+
+
+
+
+
+
+   

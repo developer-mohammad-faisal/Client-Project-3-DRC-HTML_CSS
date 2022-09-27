@@ -1,0 +1,92 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0;
+    gap: 5px;
+}
+
+.grid .span-v2-1 {
+    grid-row: 1 / span 2;
+}
+
+.grid .span-v2-2 {
+    grid-row: 2 / span 2;
+}
+
+.grid .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.grid .image .overlay {
+    z-index: 100;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.grid .image .overlay .title {
+    color: white;
+    margin-bottom: -10px;
+    transition-delay: 0.2s;
+    transition: 0.2s;
+}
+
+.grid img:hover+.overlay {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.grid img:hover+.overlay>.title {
+    margin-bottom: unset;
+}
+
+.grid .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .grid .span-v2-2 {
+        grid-row: unset;
+    }
+}
